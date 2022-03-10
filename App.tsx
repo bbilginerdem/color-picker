@@ -1,5 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
+import React, { useCallback } from 'react';
 import { Dimensions, StyleSheet, Text, View } from 'react-native';
+import Animated, {
+	useAnimatedStyle,
+	useSharedValue,
+} from 'react-native-reanimated';
 import { ColorPicker } from './components/ColorPicker';
 
 const COLORS = [
